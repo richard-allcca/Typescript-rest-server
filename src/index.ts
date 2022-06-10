@@ -1,3 +1,5 @@
-const clubs = require('../data/clubs.json');
+import createServer from './server';
 
-console.log(clubs);
+createServer().listen(3000,()=>{
+  console.log('Servidor corriendo en el puerto 3000');
+})
